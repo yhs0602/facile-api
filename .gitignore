@@ -1,3 +1,4 @@
 Facile/output.txt
 *.csv
 .idea/
+/bin/
