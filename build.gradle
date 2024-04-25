@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'com.yhs0602'
+version '1.0-SNAPSHOT'
+
+test {
+    enabled = false
+}
+//test {
+//    maxHeapSize = "4096m" // 테스트 JVM의 최대 힙 크기 설정
+//    jvmArgs '-XX:MaxMetaspaceSize=1024m' // 테스트 JVM의 Metaspace 최대 크기 설정
+//}
+
+repositories {
+    mavenCentral()
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+dependencies {
+    implementation 'junit:junit:4.13.2'
+}
